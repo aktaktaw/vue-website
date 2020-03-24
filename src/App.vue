@@ -5,8 +5,13 @@
 </template>
 
 <style>
-#app{
+*{
   margin:0;
+}
+
+#app{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
 }
 
 </style>

@@ -2,12 +2,12 @@
   <div class="container">
       <div class="landing left">
           <h1>
-              <router-link to="/project">Developments</router-link>
+              <router-link class="nav" to="/xfero">Developments</router-link>
           </h1>
       </div>
       <div class="landing right">
           <h1>
-              <router-link to="/">Game Server</router-link>
+              <router-link class="nav" to="/">Game Server</router-link>
           </h1>
       </div>
   </div>
@@ -35,9 +35,9 @@ h1{
     font-weight: 900;
     font-size: 2vw;
 }
-h1 router-link{
+
+.nav{
     text-decoration: none;
-    text-decoration-line: unset;
     color: #ffffff;
 }
 
@@ -69,14 +69,14 @@ h1:before {
 
 .left {
   flex-basis: 50%;
-  background: #bf6654;
+  background: darkslategrey;
   box-shadow: 0 50vw 0 50vw rgba(0, 0, 0, 0);
 }
 
 .left:hover {
-  flex-basis: 150%;
+  flex-basis: 130%;
   background: saturate(#bf6654, 25);
-  box-shadow: 0 50vw 0 50vw rgba(0, 0, 0, 0.7);
+  box-shadow: 0 50vw 0 50vw rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   z-index: 500;
 }
@@ -87,9 +87,9 @@ h1:before {
 }
 
 .right:hover {
-  flex-basis: 150%;
+  flex-basis: 130%;
   background: saturate(#3d7299, 25);
-  box-shadow: 0 -50vw 0 50vw rgba(0, 0, 0, 0.7);
+  box-shadow: 0 50vw 0 50vw rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   z-index: 500;
 }
