@@ -1,4 +1,4 @@
-# landing-page
+# vue-website
 
 ## Project setup
 ```
