@@ -39,6 +39,9 @@ h1{
 .nav{
     text-decoration: none;
     color: #ffffff;
+    border-style: solid;
+    border-color: white;
+    padding: 30px;
 }
 
 h1:before {
