@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+<div class="container">
+  <div class="slide">
       <div class="landing left">
           <h1>
               <router-link class="nav" to="/xfero">Developments</router-link>
@@ -10,7 +11,12 @@
               <router-link class="nav" to="/">Game Server</router-link>
           </h1>
       </div>
+      
   </div>
+  <footer>
+          xfero.xyz copyright &copy; {{new Date().getFullYear()}}
+  </footer>
+</div>
 </template>
 
 <script>
@@ -21,11 +27,11 @@ export default {
 
 <style scoped>
 
-.container{
+.slide{
     margin:0;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 h1{
@@ -95,5 +101,17 @@ h1:before {
   box-shadow: 0 50vw 0 50vw rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   z-index: 500;
+}
+
+footer {
+    margin:0;
+    position: absolute;
+    max-width: 100%;
+    bottom: 1;
+    padding: 1rem;
+    background-color: #222;
+    color: #1eafe5;
+    text-align: center;
+    font-size: 12px;
 }
 </style>

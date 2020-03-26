@@ -18,6 +18,7 @@ export default {
 <style scoped>
 footer{
     position: absolute;
+    height:2.5rem;
     right: 0;
     bottom: 0;
     left: 0;

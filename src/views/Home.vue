@@ -1,12 +1,11 @@
 <template>
   <div class="home">
     <header>
-      <h2>Our Website</h2>
+      <router-link to="/">
+        <img src="@/assets/xfero.svg" alt="">
+      </router-link>    
     </header>
     <Slide/>
-    <footer>
-      xfero.xyz copyright &copy; {{new Date().getFullYear()}}
-    </footer>
   </div>
 </template>
 
@@ -23,9 +22,14 @@ export default {
 </script>
 
 <style scoped>
+img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 7vh;
+}
 header{
   text-align: center;
-  background-color: #333;
+  background-color: #222;
   color:#fff;
   padding: auto;
 }
@@ -36,17 +40,5 @@ h2{
     text-transform: uppercase;    
     font-weight: 500;
     font-size: 2vw;
-}
-
-footer {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    font-size: x-small;
 }
 </style>
