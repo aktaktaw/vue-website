@@ -3,7 +3,7 @@
     <div class="bg-intro">
       <Particle/>
       <div class="stack-icon">
-        <h1 class="title">Our Stacks</h1>
+        <h1>Our Stacks</h1>
           <br/>
           <div class="icon-list">
             <img src="@/assets/nodejs-icon.svg" class="icon" alt="">
@@ -16,77 +16,115 @@
           </div>
       </div>
     </div>
-    <div class="web-dev">
-      <div class="row">
-        <div class="col">
-          <div class="content">
+    <section>
+      <div class="web-dev-container">
+        <h1 class="sub-title">Web Development</h1>
+        <div>
             <h3>Project 1</h3>
-            <img src="@/assets/nodejs-icon.svg" class="icon" alt="Nodejs" style="width:100%">
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
           </div>
-        </div>  
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>  
       </div>
-    </div>
-    <div class="mobile-dev">
-      <h1>Mobile Development</h1>
-    </div>
-    <div class="iot">
-      <h1>Internet of Things</h1>
-    </div>
-    <Footer/>
+    </section>
+    <section>
+      <div class="mobile-dev-container">
+        <h1 class="sub-title">Mobile Development</h1>
+        <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+      </div>
+    </section>
+    <section>
+      <div class="iot-container">
+        <h1 class="sub-title">Internet of Things</h1>
+        <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div> 
+      </div>
+    </section>
+    <footer>
+      All Rights Reserved &copy; {{new Date().getFullYear()}}
+    </footer>
   </div>
 </template>
 
 <script>
 import Particle from '@/components/xfero/Particle'
-import Footer from '@/components/xfero/Footer'
 export default {
   name:"Content",
   components:{
-    Footer,
     Particle
   }
 }
 </script>
 
 <style scoped>
-.col{
-  float: left;
-  width: 25%;
+footer{
+    position: absolute;
+    height:2.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: small;
 }
 
-.row{
-  margin: 8px -15px;
+.sub-title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 80;
 }
 
-.row,
-.row > .col{
-  padding: 8px;
-}
-
-.row:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and(max-width: 600px){
-  .col{
-    width:100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.content{
-  align-items: center;
-  padding:10px;
-}
-.web-dev{
+.web-dev-container,
+.mobile-dev-container,
+.iot-container{
   max-width: 100vw;
+  max-height: 30vh;
   background-color: white;
   margin: auto;
-  box-sizing: border-box;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 100px;
 }
+
+.web-dev-container>div,
+.mobile-dev-container >div,
+.iot-container>div{
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
 .container{
   position: relative;
   min-height: 50vh;
@@ -110,10 +148,16 @@ h1{
   height: 50px;
 }
 
+.mobile-mockup{
+  width: 300px;
+  height: 300px;
+}
+
 .icon-md{
   width: 120px;
   height: 50px;
 }
+
 .icon-list{
     background-color: whitesmoke;
     min-height: 10vh;
@@ -142,7 +186,7 @@ h1{
   transition: transform .2s;
 }
 
-img:hover{
+.icon:hover, .icon-md:hover{
   transform:scale(1.2);
 }
 

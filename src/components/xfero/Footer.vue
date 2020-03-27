@@ -26,6 +26,6 @@ footer{
     background-color: #333;
     color: white;
     text-align: center;
-    font-size: x-small;
+    font-size: small;
 }
 </style>

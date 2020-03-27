@@ -1,17 +1,7 @@
 <template>
   <section>
       <header>
-        <nav class="navbar">
-          <router-link class="logo" to="/xfero">Logo</router-link>
-          <ul class="main-nav">
-            <li>
-              <router-link class="nav-links" to="/xfero">Home</router-link>
-            </li>
-            <li>
-              <router-link class="nav-links" to="/xfero/about">About</router-link>
-            </li>
-          </ul>
-        </nav>
+       <router-link class="nav" to="/">Go Back</router-link>
       </header>
   </section>
 </template>
@@ -23,5 +13,18 @@ export default {
 </script>
 
 <style>
+header{
+  background-color: #1eafe5;
+}
+
+.nav{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+
+.nav:hover{
+  color:#333;
+}
 
 </style>
