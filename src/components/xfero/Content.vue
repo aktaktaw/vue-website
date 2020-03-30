@@ -16,9 +16,11 @@
           </div>
       </div>
     </div>
+    <br/>
     <section>
+      <h1 class="sub-title">Web Developments</h1>
       <div class="web-dev-container">
-        <h1 class="sub-title">Web Development</h1>
+        
         <div>
             <h3>Project 1</h3>
             <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
@@ -31,39 +33,41 @@
             <h3>Project 1</h3>
             <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
           </div>  
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+          </div>  
       </div>
     </section>
+    <br>
     <section>
+      <h1 class="sub-title">Mobile Developments</h1>
       <div class="mobile-dev-container">
-        <h1 class="sub-title">Mobile Development</h1>
+        
         <div>
             <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+            <img class="mobile-mockup" src="@/assets/projects/project1.png" alt="">
           </div>
           <div>
             <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+            <img class="mobile-mockup" src="@/assets/projects/project1.png" alt="">
           </div>
           <div>
             <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
+            <img class="mobile-mockup" src="@/assets/projects/project1.png" alt="">
           </div>
+          <div>
+            <h3>Project 1</h3>
+            <img class="mobile-mockup" src="@/assets/projects/project1.png" alt="">
+          </div>  
       </div>
     </section>
+    <br>
     <section>
-      <div class="iot-container">
-        <h1 class="sub-title">Internet of Things</h1>
+      <h1 class="sub-title">IOT Developments</h1>
+      <div class="iot-container">   
         <div>
             <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
-          </div>
-          <div>
-            <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
-          </div>
-          <div>
-            <h3>Project 1</h3>
-            <img class="mobile-mockup" src="@/assets/iphone.jpg" alt="">
           </div> 
       </div>
     </section>
@@ -75,10 +79,13 @@
 
 <script>
 import Particle from '@/components/xfero/Particle'
+//import VueCoreVideoPlayer from 'vue-core-video-player';
+
 export default {
   name:"Content",
   components:{
-    Particle
+    Particle,
+    //VueCoreVideoPlayer
   }
 }
 </script>
@@ -98,11 +105,12 @@ footer{
 }
 
 .sub-title{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 2em;
   font-weight: 80;
+  background-color: #1eafe5;
 }
 
 .web-dev-container,
@@ -115,6 +123,7 @@ footer{
   display:grid;
   grid-template-columns: auto auto auto auto;
   padding: 100px;
+  padding-bottom: 200px;
 }
 
 .web-dev-container>div,
@@ -171,7 +180,7 @@ h1{
 .stack-icon{
   position: absolute;
   z-index: 10;
-  top: 20%; 
+  top: 10%; 
   left: 20%;
   right: 20%;
   text-align: center;
